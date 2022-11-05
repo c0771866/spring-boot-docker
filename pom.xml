@@ -94,13 +94,13 @@
 	    <repository>
 	      <id>nexus</id>
 	      <name>Landmark Technologies Releases Nexus Repository</name>
-	      <url>http://159.203.23.40:7777/repository/Docker-jobs-release/</url>
+	      <url>http://159.203.23.40:7777/repository/Sprong-Release/</url>
 	    </repository>
 	    
 	    <snapshotRepository>
 	      <id>nexus</id>
 	      <name>Landmark Technologies Snapshot Nexus Repository </name>
-	      <url>http://159.203.23.40:7777/repository/Docker-jobs/</url>
+	      <url>http://159.203.23.40:7777/repository/Spring-Snapshot/</url>
 	    </snapshotRepository>
 	    
 	</distributionManagement>
