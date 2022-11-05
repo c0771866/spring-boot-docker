@@ -18,6 +18,12 @@
 		<spring-boot.version>2.1.5.RELEASE</spring-boot.version>
 		<spring-cloud.version>Greenwich.RELEASE</spring-cloud.version>
 		<logstash-logback-encoder.version>6.1</logstash-logback-encoder.version>
+		
+		<sonar.host.url>http://159.203.23.40:5555</sonar.host.url>
+		<sonar.login>squ_58506f5d7dc51004307104f01e81d86fc2bd2f66</sonar.login>
+		<!-- <sonar.password>odogwu</sonar.password> -->
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
 	</properties>
 
 	<dependencyManagement>
@@ -83,6 +89,22 @@
 			<scope>test</scope>
 		</dependency>
 	</dependencies>
+	
+	<distributionManagement>
+	    <repository>
+	      <id>nexus</id>
+	      <name>Landmark Technologies Releases Nexus Repository</name>
+	      <url>http://159.203.23.40:7777/repository/Docker-jobs-release/</url>
+	    </repository>
+	    
+	    <snapshotRepository>
+	      <id>nexus</id>
+	      <name>Landmark Technologies Snapshot Nexus Repository </name>
+	      <url>http://159.203.23.40:7777/repository/Docker-jobs/</url>
+	    </snapshotRepository>
+	    
+	</distributionManagement>
+	
 	<build>
 		<plugins>
 			<plugin>
